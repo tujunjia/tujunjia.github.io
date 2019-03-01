@@ -1,0 +1,74 @@
+*{
+    margin: 0px auto;
+    padding: 0px 0px;
+}
+#nav-background{
+    background-image: url("../img/3.jpg");
+    background-repeat:no-repeat;
+    background-position:center;
+    /*使图片填充整个div*/
+    background-size: 100% 100%;
+    width: 100%;
+    height: 300px;
+
+    padding: 20px 40px 0px 30px;
+
+
+}
+.nav-text{
+    font-family: Times;
+    font-weight:bold;
+    font-size:1.2em;
+    text-decoration: none;
+    color: #c0c0c0;
+}
+
+
+.nav-text:link{
+    color: #FFFFFF;
+}
+/*初始状态*/
+.nav-text:visited{
+    color: #FFFFFF;
+}
+/*鼠标移上状态*/
+.nav-text:hover{
+    color: #FFFFFF;
+    background-color:transparent;
+}
+/*鼠标按下效果*/
+.nav-text:active{
+    color: yellow;
+}
+
+.nav-h{
+    padding-top: 30px;
+}
+.nav-text-1{
+    text-align: center;
+    letter-spacing: 3px;
+    line-height: 100%;
+    font-size: 3em;
+}
+.nav-text-2{
+    text-align: center;
+    letter-spacing: 3px;
+    line-height: 100%;
+    font-size: 3em;
+}
+
+
+/*smarty页面文章css*/
+.smarty-content{
+    background-color: #FFFFFF;
+    width: 80%;
+    height: 80px;
+    margin-top: 20px;
+
+    font-size: 1.3em;
+    line-height: 80px;
+}
+
+.smarty-content-text{
+    margin-left: 20px;
+}

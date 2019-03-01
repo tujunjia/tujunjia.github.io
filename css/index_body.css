@@ -1,0 +1,26 @@
+
+/*搜索框*/
+.control-group{
+    background-color: #FFFFFF;
+    margin-top: 20px;
+    padding: 20px;
+}
+/*头像关于我*/
+.body-background{
+    background-color: #FFFFFF;
+
+    margin-top: 20px;
+    padding: 20px;
+}
+/*分类*/
+.achiv-goup{
+    background-color: #FFFFFF;
+    margin-top: 20px;
+    padding: 20px;
+}
+/*左侧内容*/
+.body-content{
+    background-color: #FFFFFF;
+    margin-top: 20px;
+    padding: 20px;
+}
