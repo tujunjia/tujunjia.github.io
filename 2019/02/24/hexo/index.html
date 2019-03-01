@@ -13,6 +13,10 @@
     
 
     
+        <meta name="description" content="学习html知识重点难点总结:
+伪类选择器在支持 CSS 的浏览器中，链接的不同状态都可以以不同的方式显示
+实例：                    [实例] [] [link text] 1234a:link &amp;#123;color:#FF0000;&amp;#125;        /* 未访问的链">
+    
 
     <!--Author-->
     
@@ -25,6 +29,10 @@
     
 
     <!--Open Graph Description-->
+    
+        <meta property="og:description" content="学习html知识重点难点总结:
+伪类选择器在支持 CSS 的浏览器中，链接的不同状态都可以以不同的方式显示
+实例：                    [实例] [] [link text] 1234a:link &amp;#123;color:#FF0000;&amp;#125;        /* 未访问的链">
     
 
     <!--Open Graph Site Name-->
@@ -197,7 +205,33 @@
 
             <!-- Post Main Content -->
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                
+                <h1 id="学习html知识重点难点总结"><a href="#学习html知识重点难点总结" class="headerlink" title="学习html知识重点难点总结:"></a>学习html知识重点难点总结:</h1><hr>
+<h1 id="伪类选择器"><a href="#伪类选择器" class="headerlink" title="伪类选择器"></a>伪类选择器</h1><p>在支持 CSS 的浏览器中，链接的不同状态都可以以不同的方式显示</p>
+<p>实例：<br>                    <figure class="highlight plain"><figcaption><span>[实例] [] [link text] </span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">a:link &#123;color:#FF0000;&#125;        /* 未访问的链接 */</span><br><span class="line">a:visited &#123;color:#00FF00;&#125;     /* 已访问的链接 */</span><br><span class="line">a:hover &#123;color:#FF00FF;&#125;       /* 鼠标划过链接 */</span><br><span class="line">a:active &#123;color:#0000FF;&#125;      /* 已选中的链接 */</span><br></pre></td></tr></table></figure></p>
+<p>注意：</p>
+<p>1、在CSS定义中，a:hover 必须被置于 a:link 和 a:visited 之后，才有效。</p>
+<p>2、在 CSS 定义中，a:active 必须被置于 a:hover 之后，才是有效的。</p>
+<p>3、伪类的名称不区分大小写。</p>
+<hr>
+<h1 id="边框属性重点"><a href="#边框属性重点" class="headerlink" title="边框属性重点"></a>边框属性重点</h1><p>1、边框的一般属性</p>
+<p>实例:</p>
+<pre><code><figure class="highlight plain"><figcaption><span>[实例] [] [link text] </span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">border：10px  5px  15px  0;     /*设置边框上右下左的像素*/</span><br><span class="line">border-top: 100px solid red;</span><br><span class="line">border-right: 100px solid green;</span><br><span class="line">border-top: 100px solid red;</span><br><span class="line">border-right: 100px solid green;  /*以上四种是分辨设置的*/</span><br><span class="line">border-color：red;                 /*这是设置边框四周颜色为红色*/</span><br><span class="line">border-top: 100px solid red;      /*连写模式 像素  实线  颜色*/</span><br></pre></td></tr></table></figure>
+</code></pre><p>2、边框的圆角属性</p>
+<p>实例:<br>                    <figure class="highlight plain"><figcaption><span>[实例] [] [link text] </span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">border：10px  5px  15px  0         /*分别设置边框的像素*/</span><br></pre></td></tr></table></figure></p>
+<p>注意：IE浏览器不支持圆角属性</p>
+<hr>
+<h1 id="背景属性"><a href="#背景属性" class="headerlink" title="背景属性"></a>背景属性</h1><p>查进程：</p>
+<p>1、固定背景</p>
+<p>可以设置背景的固定，当我们设置这个属性之后，我们的背景不会随着滚动条的滚动移动。（代码片段如下）</p>
+<p>实例：<br>                     <figure class="highlight plain"><figcaption><span>[实例] [] [link text] </span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">background-image :url(css/images/img.jpg) ;</span><br><span class="line">background-position: right bottom ;      /*背景的绝对定位*/</span><br><span class="line">background-attachment:fixed;             /*此属性设置改背景固定*/</span><br></pre></td></tr></table></figure></p>
+<p>2、背景是否平铺</p>
+<p>可以设置背景的平铺规则，当我们设置这个属性之后，我们的背景会沿着不同的方向循环平铺展示（代码片段如下）</p>
+<p>实例：<br>                    <figure class="highlight plain"><figcaption><span>[实例] [] []</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">                        background-image :url(css/images/img.jpg) ;</span><br><span class="line">                        background-repeat :no-repeat ;            /*背景不平铺单张显示*/</span><br><span class="line">                        background-repeat :repeat-x ;            /*背景沿x轴平铺*/</span><br><span class="line">                        background-repeat :repeat-y ;            /*背景沿y轴平铺*/</span><br><span class="line">                    ``` </span><br><span class="line">                        </span><br><span class="line">                     </span><br><span class="line">                </span><br><span class="line"></span><br><span class="line">3、背景各种属性的连写模式</span><br><span class="line"></span><br><span class="line">实例</span><br><span class="line">                    ```[php] [实例] [] []</span><br><span class="line">                        background: color url() repeat attachment position; /*颜色  地址 平铺效果 滚动 位置*/</span><br><span class="line">                    ``` </span><br><span class="line">                </span><br><span class="line"></span><br><span class="line">* * *</span><br><span class="line"></span><br><span class="line">字体属性</span><br><span class="line">====</span><br><span class="line"></span><br><span class="line">1、字体的包裹属性</span><br><span class="line"></span><br><span class="line">当我们设置这个属性之后，字体在元素中自动换行不会超出所在元素</span><br><span class="line"></span><br><span class="line">实例</span><br></pre></td></tr></table></figure></p>
+<pre><code>word-wrap: normal;     /*只在允许的断字点换行（浏览器保持默认处理）*/
+word-wrap: break-word  /*在长单词或 URL 地址内部进行换行。*/
+``` 
+</code></pre><hr>
+<h1 id="div与css优势"><a href="#div与css优势" class="headerlink" title="div与css优势"></a>div与css优势</h1>
 
                 
             </div>
