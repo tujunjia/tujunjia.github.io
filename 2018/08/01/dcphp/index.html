@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head><meta name="generator" content="Hexo 3.8.0">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Description-->
+
+    
+
+    
+        <meta name="description" content="PHP常用函数总结:
+数组函数：1.排序类：【1.无返回值，传值引用，就直接对原数组进行了修改】
+按V：sort,rsort,asort,arsort
+按K：ksort,krsort
+按字母：natsort();   //区分大小写的排序              natcasesort();   ">
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="涂峻嘉">
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="php中常用函数总结">
+    
+
+    <!--Open Graph Description-->
+    
+        <meta property="og:description" content="PHP常用函数总结:
+数组函数：1.排序类：【1.无返回值，传值引用，就直接对原数组进行了修改】
+按V：sort,rsort,asort,arsort
+按K：ksort,krsort
+按字母：natsort();   //区分大小写的排序              natcasesort();   ">
+    
+
+    <!--Open Graph Site Name-->
+        <meta property="og:site_name" content="Hexo">
+
+    <!--Type page-->
+    
+        <meta property="og:type" content="article">
+    
+
+    <!--Page Cover-->
+    
+    
+        <meta property="og:image" content="http://yoursite.comhttp://www.codeblocq.com/assets/projects/hexo-theme-clean-blog/img/home-bg.jpg">
+    
+
+        <meta name="twitter:card" content="summary_large_image">
+
+    
+
+    
+        <meta name="twitter:image" content="http://yoursite.comhttp://www.codeblocq.com/assets/projects/hexo-theme-clean-blog/img/home-bg.jpg">
+    
+
+    <!-- Title -->
+    
+    <title>php中常用函数总结 - Hexo</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.css" type="text/css" rel="stylesheet">
+
+    <!-- Google Analytics -->
+    
+
+
+    <!-- favicon -->
+    
+
+</head>
+
+
+<body>
+
+    <!-- Menu -->
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">涂峻嘉</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                
+                    <li>
+                        <a href="/">
+                            
+                                主页
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/archives">
+                            
+                                归档
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/tags">
+                            
+                                标签
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories">
+                            
+                                文章分类
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/about">
+                            
+                                关于
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="https://github.com/klugjo/hexo-theme-clean-blog">
+                            
+                                <i class="fa fa-github fa-stack-2x"></i>
+                            
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+    <!-- Main Content -->
+    <!-- Page Header -->
+<!-- Set your background image for this header in your post front-matter: cover -->
+
+<header class="intro-header" style="background-image: url('http://www.codeblocq.com/assets/projects/hexo-theme-clean-blog/img/home-bg.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>php中常用函数总结</h1>
+                    
+                    <span class="meta">
+                        <!-- Date and Author -->
+                        
+                        
+                            2018-08-01
+                        
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Tags and categories -->
+           
+                <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 post-tags">
+                    
+                        
+
+
+<a href="/tags/php/">#php</a>
+
+
+                    
+                </div>
+                <div class="col-lg-4 col-md-5 post-categories">
+                    
+                </div>
+            
+
+            <!-- Gallery -->
+            
+
+            <!-- Post Main Content -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <h1 id="PHP常用函数总结"><a href="#PHP常用函数总结" class="headerlink" title="PHP常用函数总结:"></a>PHP常用函数总结:</h1><hr>
+<h1 id="数组函数："><a href="#数组函数：" class="headerlink" title="数组函数："></a>数组函数：</h1><p><strong>1</strong>.排序类：【1.无返回值，传值引用，就直接对原数组进行了修改】</p>
+<p>按V：sort,rsort,asort,arsort</p>
+<p>按K：ksort,krsort</p>
+<p>按字母：natsort();   //区分大小写的排序<br>              natcasesort();   //不区分大小写的排序，</p>
+<p>当遇到字符完全一样，按照数字排 eg: FILE1,FILE2, 这两个字符相同，再按照数字1&lt;2排，所以结果 FILE1,FILE2</p>
+<p><strong>2</strong>.键值操作类：【都有返回值，没有在原来参数上修改】</p>
+<p>代码展示片段<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">array_values($arr);//获取$arr中的值重排，去掉下标【返回值新索引数组】</span><br><span class="line">array_keys($arr[,&quot;str&quot;,true])   //获取$arr中所有字符是&quot;str&quot;的下标，形成索引数组，true表示区分大小写【返回新索引数组】</span><br><span class="line">array_search(&quot;is&quot;,$arr[,true])//返回值&quot;is&quot;在$arr中的key，找不到返回fales,true表示严格按照类型(8,&quot;8&quot;)【返回第一个匹配值】</span><br><span class="line">in_array(&quot;str&quot;,$arr);   //判断&quot;str&quot;在$arr中是否存在，【返回BOOL】</span><br><span class="line">is_array($arr); //判断是否是数组【返回BOOL】</span><br><span class="line">array_key_exists($key,$arr); //查询$arr中是否有$key，【返回BOOL】</span><br><span class="line">array_flip($arr);   // 交换键值，如有重复，后来居上，【返回新数组】</span><br><span class="line">array_reverse($arr,[true|false]); //数组顺序反转，param2是否保留原来键值【返回新关联/索引数组】</span><br><span class="line">array_column(array(),&apos;name&apos;[,name_two]) — 返回数组中指定的name列[可选参数，如果有返回name=&gt;name_two的形式]【返回一维数组】</span><br></pre></td></tr></table></figure></p>
+<p><strong>3</strong>.元素个数和唯一性【都有返回值，没有在原来参数上修改】</p>
+<p>代码展示片段<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">array_unique($arr);//去掉$arr中的重复值，重复的保留第一个值，【返回数组，键值保留】</span><br><span class="line">array_count_values($arr)//统计数组值出现的次数，【返回数组，KEY为原来数组的值，VALUE为计的数】</span><br><span class="line">count($arr[,1])/sizeof();//统计$arr的元素个数，参数&quot;1&quot;表示统计多维数组开启，默认0为关闭【返回统计个数】</span><br></pre></td></tr></table></figure></p>
+<p><strong>4</strong>.数组的数据结构【无返回值，传值引用，就直接对原数组进行了修改】</p>
+<p>代码展示片段<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">    array_shift($arr)//从开头，删除数组第一个元素</span><br><span class="line">    array_unshift($arr,&quot;one&quot;,&quot;two&quot;)//从开头，添加元素</span><br><span class="line">    array_pop($arr)//从结尾，删除数组最后一个元素</span><br><span class="line">    array_push($arr,&quot;aaa&quot;);//从结尾，添加元素</span><br><span class="line">    current($arr)//返回数组中的当前单元 比如是关联数组是不知道下标，可以输出当前数组的办法解决</span><br><span class="line">    key($arr)//返回当前指针指向元素的键值</span><br><span class="line">    next($arr)//当前指针下移</span><br><span class="line">    pre($arr)//当前指针上移</span><br><span class="line">    end($arr)//指针指到最后</span><br><span class="line">    reset($arr)//指针回归到开头</span><br><span class="line">    unset($arr)//销毁此数组</span><br><span class="line">```                </span><br><span class="line"></span><br><span class="line">5、其他函数</span><br><span class="line"></span><br><span class="line">代码展示片段</span><br></pre></td></tr></table></figure></p>
+<pre><code>    array_rand($arr,2);//随机返回两个$arr数组当中的key
+    shuffle($arr)//随机的重组$arr，顺序变乱【返回新数组，保留键值】
+    array_sum($arr);//返回$arr的value的和【返回一个值】
+    range(0,10,2,)//快速创建0，10的数组，间隔为2，所以有5个值【返回新索引数组】
+    http_build_query($arr)//把关联数组转换成一个经过urlencode加密的URL eg:array[&quot;a&quot;=&gt;2];=&gt;URL:a=2&amp;
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">                </span><br><span class="line"></span><br><span class="line">* * *</span><br><span class="line"></span><br><span class="line">字符串函数</span><br><span class="line">=====</span><br><span class="line"></span><br><span class="line">1、返回值为boll类型函数</span><br><span class="line"></span><br><span class="line">代码展示片段</span><br></pre></td></tr></table></figure>
+
+isset($a)//当$a=NULL 或不存在，返回false，反之为true
+empty($a)//当$a=NULL/&apos;&apos;/array()/0/&apos;0&apos;/不存在 时 返回true,反之为false
+</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">2、返回值为自字符串函数</span><br><span class="line"></span><br><span class="line">代码展示片段</span><br></pre></td></tr></table></figure>
+<pre><code>substr(字符串,开始地方,[返回字符串的长度]);// 截取字符串的一部分,第一个字符位置为0
+substr_replace($str,&quot;aaa&quot;,start[,length]);在$str上操作，从第start个开始,把【后边】的字[全/或length个]替换
+sub_count($str,&quot;is&quot;[,5,10]);//[ 从第五个字符开始，搜索长度为10，]搜索is在$str中出现的次数，【返回次数】
+strstr($email,&quot;@&quot;[,true])    //从头开始搜索,无true返回@后边字符，有true返回@前边的字符[strrchr对比]
+strrchr($email,&quot;@&quot;)//从结尾开始搜索，返回@后的所有字符
+str_replace(被替换词,替换词，被搜索字符串，[统计替换次数$num])前两个参数也可为数组，两个数组元素个数相同
+str_repeat($str,num);//重复$str字符串 num次
+</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">                </span><br><span class="line"></span><br><span class="line">3、返回值为数字类串函数</span><br><span class="line"></span><br><span class="line">代码展示片段</span><br></pre></td></tr></table></figure>
+<pre><code>1.strpos($str,&quot;@&quot;);//返回@【第一次出现的位置】
+2.strrpos($str,&quot;@&quot;);//返回@【最后一次出现的位置】
+3.str_word_count($str[,0/1/2]);//返回$str中单词的数量[0指返回次数,默认值/1指以数组形式返回单词值/2指返回关联数组，k为单词首字母下标,v单词值]
+4.strcmp($str1,$str2);//按ASCII码比较 str1&gt;str2 则返回1 相等返回0 &lt;返回-1  strcasecmp不区分大小写的比较
+5.strnatcmp($str1,$str2);//按自然数的排序比较，上边的比较10&lt;2；本函数比较10&gt;2,按自然数大小来的strcasecmp($str1,$str2);strnatcasecmp//以上4个函数，$str1，$str2比较，【返回值：相等0，小于-1，大于1】
+6. number_format(10000[,2]);        //==》10,000.00        把第一个参数格式化,保留2位小数
+7. strlen($string);成功则返回字符串 $string 的长度
+8. mb_strlen($string,&apos;utf8&apos;);//获取字符串$string长度，多字节的字符被计为 1
+</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">* * *</span><br><span class="line"></span><br><span class="line">文本处理类</span><br><span class="line">=====</span><br><span class="line"></span><br><span class="line">代码展示片段</span><br></pre></td></tr></table></figure>
+<pre><code>strtoupper($str)//字母全转为大写【返回全大写字符串】
+strtolower()//字母全转为小写【返回全小写字符串】
+strtotime(&apos;2015-10-10 10:10:10&apos;);//指定时间转换为时间戳【返回时间戳】
+str_pad($str,length,[---，STR_PAD_BOTH]); //在$str的两边填补“---“，注意，length若小于$str长度，不填补
+trim($str[,&quot;a&quot;,STR_PAD_BOTH])// 去除两边/左/右的空白或&quot;a&quot;,默认是空白，或自定义字符
+floatval(&quot;123.45aa&quot;)//=》获取变量的浮点值【123.45】
+ucfirst()//整个$str首字母大写
+ucword()//$str每个单词首字母大写
+</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">* * *</span><br><span class="line"></span><br><span class="line">HTML类处理</span><br><span class="line">=======</span><br><span class="line"></span><br><span class="line">代码展示片段</span><br></pre></td></tr></table></figure>
+<pre><code>htmlspecialchars($str)//函数把【预定义字符】转换为【 HTML 实体】，&amp;转换成&amp;
+htmlspecialchars_decode($str);//把【HTML实体】转换成【预定义字符】，&amp;转换成&amp;
+htmlentities($str);,函数把【预定义字符】转换为【 HTML 实体】，&amp;转换成&amp;，有乱码问题，注意第二第三个参数，若编码不正确，会在实体化时把信息丢失
+html_entity_decode($str)////把【HTML实体】转换成【预定义字符】，&amp;转换成&amp;,  &gt; 转成 &lt;
+addslashes($html)；               //添加转义字符“/”
+stripslashes($html);                 //删除转义字符“/”
+strip_tags($html);                     //去除HTML标签
+nl2br($str)                                //在$str中的换行/n前插入  ，因为\n在源码可以行，但是在浏览器窗口不行，有这个就可以
+iconv( from_charset ; to_charset,$str);        //转化字符格式
+$file_name = iconv(&quot;gb2312&quot;,&quot;utf-8&quot;,$file_name);
+</code></pre><p><code>`</code>                </p>
+<hr>
+
+
+                
+            </div>
+
+            <!-- Comments -->
+            
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    
+
+
+                </div>
+            
+        </div>
+    </div>
+</article>
+
+    <!-- Footer -->
+    <hr>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+
+                    
+
+                    
+                        <li>
+                            <a href="https://github.com/klugjo/hexo-theme-clean-blog" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+
+                    
+
+                    
+                </ul>
+                <p class="copyright text-muted">&copy; 2019 涂峻嘉<br></p>
+                <p class="copyright text-muted">Original Theme <a target="_blank" href="http://startbootstrap.com/template-overviews/clean-blog/">Clean Blog</a> from <a href="http://startbootstrap.com/" target="_blank">Start Bootstrap</a></p>
+                <p class="copyright text-muted">Adapted for <a target="_blank" href="https://hexo.io/">Hexo</a> by <a href="http://www.codeblocq.com/" target="_blank">Jonathan Klughertz</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- After footer scripts -->
+    
+<!-- jQuery -->
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<!-- Gallery -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Disqus Comments -->
+
+
+
+</body>
+
+</html>

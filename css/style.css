@@ -615,3 +615,21 @@ pre .clojure .title {
 pre .deletion {
   color: #dc322f;
 }
+.about-body{
+    margin-top: -50px; 
+    background-color: #f7f7f7;
+    width: 100%;
+
+}
+.about-body-content{
+    width: 80%;
+    margin: 10px auto;
+    padding: 20px 0px 20px 50px;
+
+    background-color: #ffffff;
+    color:inherit;
+    font-size: 1em;
+    letter-spacing: 3px;
+    font-family: "AvenirNext-Regular";
+}
+
