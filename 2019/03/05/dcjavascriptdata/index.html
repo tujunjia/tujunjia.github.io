@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head><meta name="generator" content="Hexo 3.8.0">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Description-->
+
+    
+
+    
+        <meta name="description" content="Javascript-应用类型 学习总结object类型
+数组类型（object）
+栈方法函数
+array.pushu() 数组尾部插入数据，返回插入之后的影响行数。
+array.pop() 尾部弹出函数，返回弹出的值。
+array.shift() 头部弹出函数 返回数组头值。
+array.unsh">
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="涂峻嘉">
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="Javascript-应用类型">
+    
+
+    <!--Open Graph Description-->
+    
+        <meta property="og:description" content="Javascript-应用类型 学习总结object类型
+数组类型（object）
+栈方法函数
+array.pushu() 数组尾部插入数据，返回插入之后的影响行数。
+array.pop() 尾部弹出函数，返回弹出的值。
+array.shift() 头部弹出函数 返回数组头值。
+array.unsh">
+    
+
+    <!--Open Graph Site Name-->
+        <meta property="og:site_name" content="Hexo">
+
+    <!--Type page-->
+    
+        <meta property="og:type" content="article">
+    
+
+    <!--Page Cover-->
+    
+    
+        <meta property="og:image" content="http://yoursite.comhttp://www.codeblocq.com/assets/projects/hexo-theme-clean-blog/img/home-bg.jpg">
+    
+
+        <meta name="twitter:card" content="summary_large_image">
+
+    
+
+    
+        <meta name="twitter:image" content="http://yoursite.comhttp://www.codeblocq.com/assets/projects/hexo-theme-clean-blog/img/home-bg.jpg">
+    
+
+    <!-- Title -->
+    
+    <title>Javascript-应用类型 - Hexo</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.css" type="text/css" rel="stylesheet">
+
+    <!-- Google Analytics -->
+    
+
+
+    <!-- favicon -->
+    
+
+</head>
+
+
+<body>
+
+    <!-- Menu -->
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">涂峻嘉</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                
+                    <li>
+                        <a href="/">
+                            
+                                主页
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/archives">
+                            
+                                归档
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/tags">
+                            
+                                标签
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories">
+                            
+                                文章分类
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/about">
+                            
+                                关于
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="https://github.com/klugjo/hexo-theme-clean-blog">
+                            
+                                <i class="fa fa-github fa-stack-2x"></i>
+                            
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+    <!-- Main Content -->
+    <!-- Page Header -->
+<!-- Set your background image for this header in your post front-matter: cover -->
+
+<header class="intro-header" style="background-image: url('http://www.codeblocq.com/assets/projects/hexo-theme-clean-blog/img/home-bg.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>Javascript-应用类型</h1>
+                    
+                    <span class="meta">
+                        <!-- Date and Author -->
+                        
+                        
+                            2019-03-05
+                        
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Tags and categories -->
+           
+                <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 post-tags">
+                    
+                        
+
+
+<a href="/tags/javascript/">#javascript</a>
+
+
+                    
+                </div>
+                <div class="col-lg-4 col-md-5 post-categories">
+                    
+                </div>
+            
+
+            <!-- Gallery -->
+            
+
+            <!-- Post Main Content -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <h2 id="Javascript-应用类型-学习总结"><a href="#Javascript-应用类型-学习总结" class="headerlink" title="Javascript-应用类型 学习总结"></a>Javascript-应用类型 学习总结</h2><h3 id="object类型"><a href="#object类型" class="headerlink" title="object类型"></a>object类型</h3><hr>
+<h3 id="数组类型（object）"><a href="#数组类型（object）" class="headerlink" title="数组类型（object）"></a>数组类型（object）</h3><ul>
+<li>栈方法函数<ol>
+<li>array.pushu() 数组尾部插入数据，返回插入之后的影响行数。</li>
+<li>array.pop() 尾部弹出函数，返回弹出的值。</li>
+<li>array.shift() 头部弹出函数 返回数组头值。</li>
+<li>array.unshift() 头部插入函数 返回影响行数。 </li>
+</ol>
+</li>
+<li>重排函数<ol>
+<li>reverse() 倒序排列数组。</li>
+<li>array.sort() 先将函数tostring()然后再排序。</li>
+</ol>
+</li>
+<li><p>操作方法函数</p>
+<ol>
+<li>concat() 复制原数组，可以传任意数量参数，参数会加在新数组中，原数组不被被影响。</li>
+<li>slice() 去除原数组中的，并且返回。</li>
+<li>splice(2 1 “red”) 从数组的位置2开始，删除一个数据，插入”red”数据。</li>
+</ol>
+</li>
+<li><p>位置方法函数</p>
+<ol>
+<li>indexof() 从头找某个元素。</li>
+<li>lastindexof() 从数组的尾部开始查找，二者皆返回元素所在的位置。</li>
+</ol>
+</li>
+<li><p>迭代方法</p>
+<ol>
+<li>every(“数据值” “数组键值key” “数组名字”) 参数中的函数会应用于数组中的每一个成员，当每个成员返回的结果为true时，最后的结果返回true。</li>
+<li>filter() 返回执行结果为true组成的一个数组。</li>
+<li>foreach() 没有返回值，在函数体中能进行一系列的数据处理。</li>
+<li>map() 返回调用函数的结果组成的数组。</li>
+<li>some() 函数执行结果又一次为真，则结果返回为真。</li>
+</ol>
+</li>
+<li><p>归并方法函数</p>
+<ol>
+<li>reduce() 从头遍历。</li>
+<li>reduceright() 从数组尾部遍历。</li>
+</ol>
+</li>
+</ul>
+<hr>
+<h3 id="data类型"><a href="#data类型" class="headerlink" title="data类型"></a>data类型</h3><ul>
+<li>date.parse() </li>
+<li>date.now() 获取此时的时间<h3 id="RegExp类型"><a href="#RegExp类型" class="headerlink" title="RegExp类型"></a>RegExp类型</h3></li>
+<li>i 查找不区分大小写</li>
+<li>g 全局查找</li>
+<li>m 多行查找模式<ul>
+<li><code>var pattern = /abc/   //查找abc着三个字母</code></li>
+</ul>
+</li>
+<li>pattern.exec() 返回查找到的结果</li>
+<li>pattern.test() 返回真假<h3 id="function函数类型"><a href="#function函数类型" class="headerlink" title="function函数类型"></a>function函数类型</h3></li>
+<li>函数名是函数的指针</li>
+<li>js中的函数不能实现重载</li>
+<li>函数具有属性eg：function.length 检测出函数中传的参数的数量。</li>
+</ul>
+<hr>
+<h3 id="基本包装类型"><a href="#基本包装类型" class="headerlink" title="基本包装类型"></a>基本包装类型</h3><ul>
+<li>number类型<ol>
+<li>number.toString(“a”) a:返回数的进制控制</li>
+<li>number.toFixed(“a”) a:返回数据的小数点位数</li>
+</ol>
+</li>
+<li><p>string类型</p>
+<ol>
+<li><p>字符串的对象常用函数 </p>
+<figure class="highlight plain"><figcaption><span>str </span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">str.length   			//返回字符串的长度</span><br><span class="line">str.charAt(1) 			//返回e，位置为1的字母</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>字符串操作函数</p>
+<figure class="highlight plain"><figcaption><span>	</span><a href="//返回e的字符编码">link</a></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">str.concat(&quot;hello world&quot;)  	//字符串拼接函数</span><br><span class="line">str.slice(3)  			// t string</span><br><span class="line">str.substring(3) 		//t string</span><br><span class="line">str.sub(3)       		//t string</span><br><span class="line">str.slice(s,7)   		//t st</span><br><span class="line">str.sub(3,7)     		//t strin</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>字符串位置函数</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">str.indexOf(2,a)		//从字符串第二位置开始查a，返回a的位置。</span><br><span class="line">str.lastindexOf(2,a)		//从字符串右边第二位置开始查a，返回a的位置</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>字符串去除符号函数</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">str.trim()			//删除字符串开头和末尾的空格</span><br><span class="line">str.trimLeft(&quot;/&quot;)       	//删除字符串左边的/</span><br><span class="line">str.trimRight(&quot;&#125;&quot;)      	//删除字符串右边的&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>字符串大小写转换函数</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+</li>
+</ul>
+
+
+                
+            </div>
+
+            <!-- Comments -->
+            
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    
+
+
+                </div>
+            
+        </div>
+    </div>
+</article>
+
+    <!-- Footer -->
+    <hr>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+
+                    
+
+                    
+                        <li>
+                            <a href="https://github.com/klugjo/hexo-theme-clean-blog" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+
+                    
+
+                    
+                </ul>
+                <p class="copyright text-muted">&copy; 2019 涂峻嘉<br></p>
+                <p class="copyright text-muted">Original Theme <a target="_blank" href="http://startbootstrap.com/template-overviews/clean-blog/">Clean Blog</a> from <a href="http://startbootstrap.com/" target="_blank">Start Bootstrap</a></p>
+                <p class="copyright text-muted">Adapted for <a target="_blank" href="https://hexo.io/">Hexo</a> by <a href="http://www.codeblocq.com/" target="_blank">Jonathan Klughertz</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- After footer scripts -->
+    
+<!-- jQuery -->
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<!-- Gallery -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Disqus Comments -->
+
+
+
+</body>
+
+</html>
