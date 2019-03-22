@@ -13,6 +13,10 @@
     
 
     
+        <meta name="description" content="理解 position:relative 与 position:absolute
+解释开始
+有三个值， static （静态）、 relative （相对）、 absolute （绝对）；由于 static 是所有页面元素的默认值，因此设置元素的定位类型时几乎不用这个值，除非用于覆盖之前的定义。对于">
+    
 
     <!--Author-->
     
@@ -21,10 +25,14 @@
 
     <!--Open Graph Title-->
     
-        <meta property="og:title" content="Hexo">
+        <meta property="og:title" content="理解 position:relative 与 position:absolute">
     
 
     <!--Open Graph Description-->
+    
+        <meta property="og:description" content="理解 position:relative 与 position:absolute
+解释开始
+有三个值， static （静态）、 relative （相对）、 absolute （绝对）；由于 static 是所有页面元素的默认值，因此设置元素的定位类型时几乎不用这个值，除非用于覆盖之前的定义。对于">
     
 
     <!--Open Graph Site Name-->
@@ -32,7 +40,7 @@
 
     <!--Type page-->
     
-        <meta property="og:type" content="website">
+        <meta property="og:type" content="article">
     
 
     <!--Page Cover-->
@@ -51,7 +59,7 @@
 
     <!-- Title -->
     
-    <title>Hexo</title>
+    <title>理解 position:relative 与 position:absolute - Hexo</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
@@ -162,171 +170,82 @@
 
     <!-- Main Content -->
     <!-- Page Header -->
-<!-- Set your background image for this header in the theme's configuration: index_cover -->
+<!-- Set your background image for this header in your post front-matter: cover -->
+
 <header class="intro-header" style="background-image: url('http://www.codeblocq.com/assets/projects/hexo-theme-clean-blog/img/home-bg.jpg')">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="site-heading">
-                    <h1>Hexo</h1>
-                    <hr class="small">
-                    <span class="subheading"></span>
+                <div class="post-heading">
+                    <h1>理解 position:relative 与 position:absolute</h1>
+                    
+                    <span class="meta">
+                        <!-- Date and Author -->
+                        
+                        
+                            2019-03-07
+                        
+                    </span>
                 </div>
             </div>
         </div>
     </div>
 </header>
 
-<!-- Main Content -->
-<div class="container">
-    <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            
-                <div class="post-preview">
-    <a href="/2019/03/12/dctesthtml/">
-        <h2 class="post-title">
-            HTML必会-1
-        </h2>
-        
-    </a>
-    <p class="post-meta">
-        <!-- Date and Author -->
-        
-        2019-03-12
-    </p>
-</div>
-<hr>
-            
-                <div class="post-preview">
-    <a href="/2019/03/08/dcdom/">
-        <h2 class="post-title">
-            Js-DOM对象
-        </h2>
-        
-    </a>
-    <p class="post-meta">
-        <!-- Date and Author -->
-        
-        2019-03-08
-    </p>
-</div>
-<hr>
-            
-                <div class="post-preview">
-    <a href="/2019/03/08/dcjavascriptwind/">
-        <h2 class="post-title">
-            Js-window对象-
-        </h2>
-        
-    </a>
-    <p class="post-meta">
-        <!-- Date and Author -->
-        
-        2019-03-08
-    </p>
-</div>
-<hr>
-            
-                <div class="post-preview">
-    <a href="/2019/03/07/dchtml-1/">
-        <h2 class="post-title">
-            理解 position:relative 与 position:absolute
-        </h2>
-        
-    </a>
-    <p class="post-meta">
-        <!-- Date and Author -->
-        
-        2019-03-07
-    </p>
-</div>
-<hr>
-            
-                <div class="post-preview">
-    <a href="/2019/03/05/dcjavascriptdata/">
-        <h2 class="post-title">
-            Javascript-应用类型
-        </h2>
-        
-    </a>
-    <p class="post-meta">
-        <!-- Date and Author -->
-        
-        2019-03-05
-    </p>
-</div>
-<hr>
-            
-                <div class="post-preview">
-    <a href="/2019/03/03/dcjavascript/">
-        <h2 class="post-title">
-            JavaScript学习记录
-        </h2>
-        
-    </a>
-    <p class="post-meta">
-        <!-- Date and Author -->
-        
-        2019-03-03
-    </p>
-</div>
-<hr>
-            
-                <div class="post-preview">
-    <a href="/2019/02/23/dclinux/">
-        <h2 class="post-title">
-            linux进程管理
-        </h2>
-        
-    </a>
-    <p class="post-meta">
-        <!-- Date and Author -->
-        
-        2019-02-23
-    </p>
-</div>
-<hr>
-            
-                <div class="post-preview">
-    <a href="/2018/08/20/dchtml/">
-        <h2 class="post-title">
-            html学习重难点总结
-        </h2>
-        
-    </a>
-    <p class="post-meta">
-        <!-- Date and Author -->
-        
-        2018-08-20
-    </p>
-</div>
-<hr>
-            
-                <div class="post-preview">
-    <a href="/2018/08/01/dcphp/">
-        <h2 class="post-title">
-            php中常用函数总结
-        </h2>
-        
-    </a>
-    <p class="post-meta">
-        <!-- Date and Author -->
-        
-        2018-08-01
-    </p>
-</div>
-<hr>
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Tags and categories -->
+           
+                <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 post-tags">
+                    
+                        
+
+
+<a href="/tags/html/">#html</a>
+
+
+                    
+                </div>
+                <div class="col-lg-4 col-md-5 post-categories">
+                    
+                </div>
             
 
-            <ul class="pager">
-    
-    
+            <!-- Gallery -->
+            
+
+            <!-- Post Main Content -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <h2 id="理解-position-relative-与-position-absolute"><a href="#理解-position-relative-与-position-absolute" class="headerlink" title="理解 position:relative 与 position:absolute"></a>理解 position:relative 与 position:absolute</h2><hr>
+<h3 id="解释开始"><a href="#解释开始" class="headerlink" title="解释开始"></a>解释开始</h3><ul>
+<li><p>有三个值， static （静态）、 relative （相对）、 absolute （绝对）；由于 static 是所有页面元素的默认值，因此设置元素的定位类型时几乎不用这个值，除非用于覆盖之前的定义。<br>对于后两者，一般应用：在一个相对定位的元素里面放置一个绝对定位的元素，如图： </p>
+</li>
+<li><p>子元素 B 可以通过 top 、 right 、 bottom 、 left 来精确定位，定位的参考目标就是其具有相对定位属性的父级元素 A ；并且设置这些偏移后，产生的空隙会被后面的元素填充（如果后面的元素足够尺寸的话）。由于 B 元素具有 absolute 定位属性，相当于从文档流中抽取出来，浮动在原平面排版上，形成“层”，如果有多个“层”，层与层之间就必然会有谁覆盖谁，谁在上谁在下的竞争关系，因此，为解决这个竞争，就产生了 z-index （空间坐标系的 Z轴） 属性，谁的值大，谁就在上面。另外，如果父级元素 A 没有设置 relative ，那么 B 元素就会以 body 标签当作参考点。 </p>
+</li>
+<li><p>对于具有 position:relative 属性的元素 A ，其 top 、 right 、 bottom 、 left 四个方向的位置偏移就会以该元素的原来位置作为参考点，而不是像上面说的，以具有 relative 定位属性的父级元素或 body 作为参考点。在设置了偏移后产生了空隙，其周围的元素并不会填充这些空隙，即使它们足够尺寸 (演示 ) 。值得注意的是，此时元素 A 的margin ， margin 将作用于该元素的原来位置，由于原位置产生偏移，该元素的最终位置将是 margin 与 top 、right 、 bottom 、 left 共同作用后的位置，并且其周围元素的位置也将产生影响。 </p>
+</li>
+<li><p>回过头来再看看 relative 里面的 absolute ，比如上面的 A 、 B 两个元素，如果两个元素都设置了 top 、 right 、bottom 、 left ，对于元素 B 来说，其位置偏移的参考点是元素 A 偏移后的位置，不是元素 A 的原位置，同样，如果元素 B 有 margin ，其参考点也是元素 A 偏移后的位置，这点很重要，这才是 absolute 的概念</p>
+</li>
 </ul>
+
+
+                
+            </div>
+
+            <!-- Comments -->
+            
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    
+
+
+                </div>
+            
         </div>
     </div>
-</div>
-
-
+</article>
 
     <!-- Footer -->
     <hr>

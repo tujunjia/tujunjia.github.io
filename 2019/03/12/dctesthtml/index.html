@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head><meta name="generator" content="Hexo 3.8.0">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Description-->
+
+    
+
+    
+        <meta name="description" content="HTML必会知识点DOM结构——两个节点之间可能存在哪些关系以及如何在节点之间任意移动。
+document.documentElement     返回文档的根节点document.body     document.activeElement 返回当前文档中被击活的标签节点(ie)event.fr">
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="涂峻嘉">
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="HTML必会-1">
+    
+
+    <!--Open Graph Description-->
+    
+        <meta property="og:description" content="HTML必会知识点DOM结构——两个节点之间可能存在哪些关系以及如何在节点之间任意移动。
+document.documentElement     返回文档的根节点document.body     document.activeElement 返回当前文档中被击活的标签节点(ie)event.fr">
+    
+
+    <!--Open Graph Site Name-->
+        <meta property="og:site_name" content="Hexo">
+
+    <!--Type page-->
+    
+        <meta property="og:type" content="article">
+    
+
+    <!--Page Cover-->
+    
+    
+        <meta property="og:image" content="http://yoursite.comhttp://www.codeblocq.com/assets/projects/hexo-theme-clean-blog/img/home-bg.jpg">
+    
+
+        <meta name="twitter:card" content="summary_large_image">
+
+    
+
+    
+        <meta name="twitter:image" content="http://yoursite.comhttp://www.codeblocq.com/assets/projects/hexo-theme-clean-blog/img/home-bg.jpg">
+    
+
+    <!-- Title -->
+    
+    <title>HTML必会-1 - Hexo</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.css" type="text/css" rel="stylesheet">
+
+    <!-- Google Analytics -->
+    
+
+
+    <!-- favicon -->
+    
+
+</head>
+
+
+<body>
+
+    <!-- Menu -->
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">涂峻嘉</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                
+                    <li>
+                        <a href="/">
+                            
+                                主页
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/archives">
+                            
+                                归档
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/tags">
+                            
+                                标签
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories">
+                            
+                                文章分类
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/about">
+                            
+                                关于
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="https://github.com/klugjo/hexo-theme-clean-blog">
+                            
+                                <i class="fa fa-github fa-stack-2x"></i>
+                            
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+    <!-- Main Content -->
+    <!-- Page Header -->
+<!-- Set your background image for this header in your post front-matter: cover -->
+
+<header class="intro-header" style="background-image: url('http://www.codeblocq.com/assets/projects/hexo-theme-clean-blog/img/home-bg.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>HTML必会-1</h1>
+                    
+                    <span class="meta">
+                        <!-- Date and Author -->
+                        
+                        
+                            2019-03-12
+                        
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Tags and categories -->
+           
+                <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 post-tags">
+                    
+                        
+
+
+<a href="/tags/html/">#html</a>
+
+
+                    
+                </div>
+                <div class="col-lg-4 col-md-5 post-categories">
+                    
+                </div>
+            
+
+            <!-- Gallery -->
+            
+
+            <!-- Post Main Content -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <h2 id="HTML必会知识点"><a href="#HTML必会知识点" class="headerlink" title="HTML必会知识点"></a>HTML必会知识点</h2><h3 id="DOM结构——两个节点之间可能存在哪些关系以及如何在节点之间任意移动。"><a href="#DOM结构——两个节点之间可能存在哪些关系以及如何在节点之间任意移动。" class="headerlink" title="DOM结构——两个节点之间可能存在哪些关系以及如何在节点之间任意移动。"></a>DOM结构——两个节点之间可能存在哪些关系以及如何在节点之间任意移动。</h3><ul>
+<li>document.documentElement     返回文档的根节点<html><br>document.body     <body><br>document.activeElement 返回当前文档中被击活的标签节点(ie)<br>event.fromElement        返回鼠标移出的源节点(ie)<br>event.toElement       返回鼠标移入的源节点(ie)<br>event.srcElement     返回激活事件的源节点(ie)<br>event.target         返回激活事件的源节点(firefox)<br>当前对象为node<br>返回父节点：node.parentNode, node.parendElement,<br>返回所有子节点：node.childNodes（包含文本节点及标签节点）,node.children<br>返回第一个子节点：node.firstChild<br>返回最后一个子节点： node.lastChild<br>返回同属上一个子节点：node.nextSibling<br>返回同属下一个子节点：node.previousSibling<br>parentNode和parentElement功能一样，childNodes和children功能一样。但是parentNode和<br>childNodes是符合W3C标准的，可以说比较通用。而另外两个只是IE支持，不是标准，Firefox就不支持<br>,所以大家只要记得有parentElement和children就行了 </body></html></li>
+</ul>
+<h3 id="DOM操作——怎样添加、移除、移动、复制、创建和查找节点。"><a href="#DOM操作——怎样添加、移除、移动、复制、创建和查找节点。" class="headerlink" title="DOM操作——怎样添加、移除、移动、复制、创建和查找节点。"></a>DOM操作——怎样添加、移除、移动、复制、创建和查找节点。</h3><pre><code>* 创建新节点
+  createDocumentFragment()    //创建一个DOM片段
+  createElement()   //创建一个具体的元素
+  createTextNode()   //创建一个文本节点
+* 添加、移除、替换、插入
+  appendChild()
+  removeChild()
+  replaceChild()
+  insertBefore()
+* 查找
+  getElementsByTagName()    //通过标签名称
+  getElementsByName()    //通过元素的Name属性的值
+  getElementById()    //通过元素Id，唯一性
+</code></pre><h3 id="事件——怎样使用事件以及IE和DOM事件模型之间存在哪些主要差别。"><a href="#事件——怎样使用事件以及IE和DOM事件模型之间存在哪些主要差别。" class="headerlink" title="事件——怎样使用事件以及IE和DOM事件模型之间存在哪些主要差别。"></a>事件——怎样使用事件以及IE和DOM事件模型之间存在哪些主要差别。</h3><pre><code>* 冒泡型事件：事件按照从最特定的事件目标到最不特定的事件目标(document对象)的顺序触发。
+</code></pre><p>  IE 5.5: div -&gt; body -&gt; document<br>  IE 6.0: div -&gt; body -&gt; html -&gt; document<br>  Mozilla 1.0: div -&gt; body -&gt; html -&gt; document -&gt; window</p>
+<pre><code>* 捕获型事件(event capturing)：事件从最不精确的对象(document 对象)开始触发，然后到最精确(也可以在窗口级别捕获事件，不过必须由开发人员特别指定)。
+* DOM事件流：同时支持两种事件模型：捕获型事件和冒泡型事件，但是，捕获型事件先发生。两种事件流会触及DOM中的所有对象，从document对象开始，也在document对象结束。
+</code></pre><p>  DOM事件模型最独特的性质是，文本节点也触发事件(在IE中不会)。</p>
+<h3 id="XMLHttpRequest——这是什么、怎样完整地执行一次GET请求、怎样检测错误。"><a href="#XMLHttpRequest——这是什么、怎样完整地执行一次GET请求、怎样检测错误。" class="headerlink" title="XMLHttpRequest——这是什么、怎样完整地执行一次GET请求、怎样检测错误。"></a>XMLHttpRequest——这是什么、怎样完整地执行一次GET请求、怎样检测错误。</h3><p>XMLHttpRequest 对象提供了在网页加载后与服务器进行通信的方法。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">	    varxmlhttp;</span><br><span class="line">	    functionloadXMLDoc(url)&#123;</span><br><span class="line">	        xmlhttp=null;</span><br><span class="line">	        if(window.XMLHttpRequest)&#123;    //code for all new browsers</span><br><span class="line">	            xmlhttp=newXMLHttpRequest();</span><br><span class="line">	        &#125;elseif(window.ActiveXObject)&#123;    //code for IE5 and IE6</span><br><span class="line">	            xmlhttp=newActiveXObject(&quot;Microsoft.XMLHTTP&quot;);</span><br><span class="line">	        &#125;</span><br><span class="line">	        if(xmlhttp!=null)&#123;</span><br><span class="line">	            xmlhttp.onreadystatechange=state_Change;</span><br><span class="line">	               xmlhttp.open(&quot;GET&quot;,url,true);</span><br><span class="line">	            xmlhttp.send(null);</span><br><span class="line">	        &#125;else&#123;</span><br><span class="line">	            alert(&quot;Your browser does not support XMLHTTP.&quot;);</span><br><span class="line">	        &#125;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	functionstate_Change()&#123;</span><br><span class="line">	    if(xmlhttp.readyState==4)&#123;    //4 = &quot;loaded&quot;</span><br><span class="line">	        if(xmlhttp.status==200)&#123;    //200 = OK</span><br><span class="line">	            //...our code here...</span><br><span class="line">	        &#125;else&#123;</span><br><span class="line">	            alert(&quot;Problem retrieving XML data&quot;);</span><br><span class="line">	        &#125;</span><br><span class="line">	    &#125;</span><br><span class="line">	&#125;</span><br><span class="line">	&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="严格模式与混杂模式——如何触发这两种模式，区分它们有何意义。"><a href="#严格模式与混杂模式——如何触发这两种模式，区分它们有何意义。" class="headerlink" title="严格模式与混杂模式——如何触发这两种模式，区分它们有何意义。"></a>严格模式与混杂模式——如何触发这两种模式，区分它们有何意义。</h3><p>在标准模式中，浏览器根据规范呈现页面；<br>在混杂模式中，页面以一种比较宽松的向后兼容的方式显示。<br>浏览器根据DOCTYPE是否存在以及使用的哪种DTD来选择要使用的呈现方法。如果XHTML文档包含形式完整的DOCTYPE，那么它一般以标准模式<br>呈现。对于HTML<br>4.01文档，包含严格DTD的DOCTYPE常常导致页面以标准模式呈现。包含过渡DTD和URI的DOCTYPE也导致页面以标准模式呈现，但是有过<br>渡DTD而没有URI会导致页面以混杂模式呈现。DOCTYPE不存在或形式不正确会导致HTML和XHTML文档以混杂模式呈现。</p>
+<h3 id="盒模型——外边距、内边距和边框之间的关系，IE-8以下版本的浏览器中的盒模型有什么不同。"><a href="#盒模型——外边距、内边距和边框之间的关系，IE-8以下版本的浏览器中的盒模型有什么不同。" class="headerlink" title="盒模型——外边距、内边距和边框之间的关系，IE 8以下版本的浏览器中的盒模型有什么不同。"></a>盒模型——外边距、内边距和边框之间的关系，IE 8以下版本的浏览器中的盒模型有什么不同。</h3><p>一个元素盒模型的层次从内到外分别为：内边距、边框和外边距<br>IE8以下浏览器的盒模型中定义的元素的宽高不包括内边距和边框</p>
+<h3 id="块级元素与行内元素——怎么用CSS控制它们、它们怎样影响周围的元素以及你觉得应该如何定义它们的样式。"><a href="#块级元素与行内元素——怎么用CSS控制它们、它们怎样影响周围的元素以及你觉得应该如何定义它们的样式。" class="headerlink" title="块级元素与行内元素——怎么用CSS控制它们、它们怎样影响周围的元素以及你觉得应该如何定义它们的样式。"></a>块级元素与行内元素——怎么用CSS控制它们、它们怎样影响周围的元素以及你觉得应该如何定义它们的样式。</h3><p>块级元素，用CSS中的display:inline;属性则变为行内元素<br>行内元素，用CSS中的display:block;属性则变为块级元素<br>影响：周围元素显示在同一行或换行显示，根据具体情况调整样式</p>
+<h3 id="浮动元素——怎么使用它们、它们有什么问题以及怎么解决这些问题。"><a href="#浮动元素——怎么使用它们、它们有什么问题以及怎么解决这些问题。" class="headerlink" title="浮动元素——怎么使用它们、它们有什么问题以及怎么解决这些问题。"></a>浮动元素——怎么使用它们、它们有什么问题以及怎么解决这些问题。</h3><p>需要浮动的元素可使用CSS中float属性来定义元素的浮动位置，left：往左浮动，right：往右浮动<br>浮动元素引起的问题：<br>（1）父元素的高度无法被撑开，影响与父元素同级的元素<br>（2）与浮动元素同级的非浮动元素会跟随其后<br>（3）若非第一个元素浮动，则该元素之前的元素也需要浮动，否则会影响页面显示的结构<br>解决方法：<br>使用CSS中的clear:both;属性来清除元素的浮动可解决2、3问题，对于问题1，添加如下样式，给父元素添加clearfix样式：<br>.clearfix:after{content: “.”;display: block;height: 0;clear: both;visibility: hidden;}<br>.clearfix{display: inline-block;}  /<em> for IE/Mac </em>/</p>
+<h3 id="HTML与XHTML——二者有什么区别，你觉得应该使用哪一个并说出理由。"><a href="#HTML与XHTML——二者有什么区别，你觉得应该使用哪一个并说出理由。" class="headerlink" title="HTML与XHTML——二者有什么区别，你觉得应该使用哪一个并说出理由。"></a>HTML与XHTML——二者有什么区别，你觉得应该使用哪一个并说出理由。</h3><p>主要区别：<br>     XHTML 元素必须被正确地嵌套<br>     XHTML 元素必须被关闭，空标签也必须被关闭，如 <br> 必须写成 <br><br>     XHTML 标签名必须用小写字母<br>     XHTML 文档必须拥有根元素<br>     XHTML 文档要求给所有属性赋一个值<br>     XHTML 要求所有的属性必须用引号””括起来<br>     XHTML 文档需要把所有 &lt; 、&gt;、&amp; 等特殊符号用编码表示<br>     XHTML 文档不要在注释内容中使“–”<br>     XHTML 图片必须有说明文字<br>     XHTML 文档中用id属性代替name属性</p>
+<h3 id="JSON——它是什么、为什么应该使用它、到底该怎么使用它，说出实现细节来。"><a href="#JSON——它是什么、为什么应该使用它、到底该怎么使用它，说出实现细节来。" class="headerlink" title="JSON——它是什么、为什么应该使用它、到底该怎么使用它，说出实现细节来。"></a>JSON——它是什么、为什么应该使用它、到底该怎么使用它，说出实现细节来。</h3><p>JSON(JavaScript Object Notation) 是一种轻量级的数据交换格式。易于人阅读和编写。同时也易于机器解析和生成。<br>JSON建构于两种结构：<br>“名称/值”对的集合（A collection of name/value<br>pairs）。不同的语言中，它被理解为对象（object），纪录（record），结构（struct），字典（dictionary），哈希表<br>（hash table），有键列表（keyed list），或者关联数组 （associative array）。<br>值的有序列表（An ordered list of values）。在大部分语言中，它被理解为数组（array）。</p>
+
+
+                
+            </div>
+
+            <!-- Comments -->
+            
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    
+
+
+                </div>
+            
+        </div>
+    </div>
+</article>
+
+    <!-- Footer -->
+    <hr>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+
+                    
+
+                    
+                        <li>
+                            <a href="https://github.com/klugjo/hexo-theme-clean-blog" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+
+                    
+
+                    
+                </ul>
+                <p class="copyright text-muted">&copy; 2019 涂峻嘉<br></p>
+                <p class="copyright text-muted">Original Theme <a target="_blank" href="http://startbootstrap.com/template-overviews/clean-blog/">Clean Blog</a> from <a href="http://startbootstrap.com/" target="_blank">Start Bootstrap</a></p>
+                <p class="copyright text-muted">Adapted for <a target="_blank" href="https://hexo.io/">Hexo</a> by <a href="http://www.codeblocq.com/" target="_blank">Jonathan Klughertz</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- After footer scripts -->
+    
+<!-- jQuery -->
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<!-- Gallery -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Disqus Comments -->
+
+
+
+</body>
+
+</html>

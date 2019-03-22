@@ -629,7 +629,7 @@ pre .deletion {
     background-color: #ffffff;
     color:inherit;
     font-size: 1em;
-    letter-spacing: 3px;
+    /* letter-spacing: 3px; */
     font-family: "AvenirNext-Regular";
 }
 
